@@ -26,7 +26,7 @@ You can keep the app always open into your macOS top menu and access it by that 
 - copy symbol name on your clipboard with a click or a right-click
 - keep your favorites symbols always with you with the Favorites section
 
-## What's New (v3.0.1 - Sep 05, 2025)
+## What's New (v3.1 - Sep 23, 2025)
 - SF Symbols 7 is now the default selection on macOS Tahoe 26
 - went back to the old popup style: can't drag the window anymore, but it's easier to use it this way
 - fixed the Delete all Favorites button
