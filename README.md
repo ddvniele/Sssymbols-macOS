@@ -10,9 +10,9 @@ You can keep the app always open into your macOS top menu and access it by that 
 - are you looking for the iOS version? [it's here!](https://github.com/ddvniele/Sssymbols-iOS)
 
 ## Screenshots
-<img width="200" alt="Sssymbols!" src="https://github.com/user-attachments/assets/451f4368-1fed-48c5-9106-dff7514c33fe">
-<img width="200" alt="Sssymbols! Favorites" src="https://github.com/user-attachments/assets/cf4fdca7-c56a-4c53-830f-4ae3109770b2">
-<img width="200" alt="Sssymbols! Info" src="https://github.com/user-attachments/assets/5df7dc00-294c-43e9-953d-1e890339721c">
+<img width="200" alt="Sssymbols!" src="https://github.com/user-attachments/assets/1dc1678c-3fe9-4c92-b4e0-25f374cf1868">
+<img width="200" alt="Sssymbols! Favorites" src="https://github.com/user-attachments/assets/2cd59176-be5b-485c-87ba-f971daab9e5d">
+<img width="200" alt="Sssymbols! Info" src="https://github.com/user-attachments/assets/ee154126-def7-48a3-81bd-7e763ec4c25f">
 
 
 ## Download, install & usage
@@ -27,8 +27,10 @@ You can keep the app always open into your macOS top menu and access it by that 
 - keep your favorites symbols always with you with the Favorites section
 
 ## What's New (v3.0.1 - Sep 05, 2025)
-- fixed liquid glass elements (macOS Tahoe 26)
-- fixed menu bar symbol change behavior
+- SF Symbols 7 is now the default selection on macOS Tahoe 26
+- went back to the old popup style: can't drag the window anymore, but it's easier to use it this way
+- fixed the Delete all Favorites button
+- added possibility to quit Sssymbols! by just right-clicking on the menu bar icon
 
 ## Working on
 - cleaner UI and UX
@@ -36,6 +38,11 @@ You can keep the app always open into your macOS top menu and access it by that 
 - so much more! these features are still a work-in-progress and they're not in the actual latest release yet.
 
 ## Changelog
+- v3.1 - Sep 23, 2025
+  - SF Symbols 7 is now the default selection on macOS Tahoe 26
+  - went back to the old popup style: can't drag the window anymore, but it's easier to use it this way
+  - fixed the Delete all Favorites button
+  - added possibility to quit Sssymbols! by just right-clicking on the menu bar icon
 - v3.0.1 - Sep 05, 2025
   - fixed liquid glass elements (macOS Tahoe 26)
   - fixed menu bar symbol change behavior
