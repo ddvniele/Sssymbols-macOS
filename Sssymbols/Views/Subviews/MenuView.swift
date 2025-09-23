@@ -26,7 +26,6 @@ struct MenuView: View {
     @State var newMenuButtonIcon: String = ""
     
     // favorites
-    @State var deleteFavoritesIsPresented: Bool = false
     @State var favoritesId = UUID()
     
     // clipboard text
@@ -95,10 +94,15 @@ struct MenuView: View {
                         
                         Menu(content: {
                             if selectedTab == "Favorites" {
-                                Button("Delete all Favorites") {
-                                    deleteFavoritesIsPresented = true
-                                } // BUTTON
-                                .keyboardShortcut(.delete)
+                                Menu("Delete all Favorites") {
+                                    Button(role: .destructive, action: {
+                                        sfsymbols.favoritesSymbols.removeAll()
+                                        UserDefaults.standard.set(sfsymbols.favoritesSymbols, forKey: "FAVORITES_SYMBOLS")
+                                        favoritesId = UUID() // forcing recreation of the view, need to change that
+                                    }, label: {
+                                        Label("Confirm", systemImage: "exclamationmark.circle")
+                                    })
+                                } // MENU
                                 .disabled(sfsymbols.favoritesSymbols.isEmpty)
                                 
                                 Divider()
@@ -175,16 +179,6 @@ struct MenuView: View {
                             FavoritesView(searchFavoritesText: $searchFavoritesText, clipboardText: $clipboardText, removedFromFavorites: $removedFromFavorites)
                             .id(favoritesId) // to force recreation of the view, need to change that
                             .transition(.opacity)
-                            .alert("Delete all Favorites", isPresented: $deleteFavoritesIsPresented) {
-                                Button("Delete", role: .destructive) {
-                                    sfsymbols.favoritesSymbols.removeAll()
-                                    UserDefaults.standard.set(sfsymbols.favoritesSymbols, forKey: "FAVORITES_SYMBOLS")
-                                    favoritesId = UUID() // forcing recreation of the view, need to change that
-                                } // BUTTON
-                                Button("Cancel", role: .cancel) { }
-                            } message: {
-                                Text("Are you sure you want to delete all favorites? This action cannot be undone")
-                            } // ALERT + message
                         } else if selectedTab == "Info" {
                             InfoView()
                             .transition(.opacity)

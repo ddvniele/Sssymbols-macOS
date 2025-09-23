@@ -49,7 +49,17 @@ class SFSymbols: ObservableObject {
             SymbolsStruct.init(name: "SF Symbols 7", version: OperatingSystemVersion(majorVersion: 26, minorVersion: 0, patchVersion: 0), symbols: allSymbols7),
             SymbolsStruct.init(name: "SF Symbols 6", version: OperatingSystemVersion(majorVersion: 15, minorVersion: 0, patchVersion: 0), symbols: allSymbols6)
         ] // POSSIBLE SYMBOLS
-        updateSelectedAllSymbols()
+        if let selectedSymbols = UserDefaults.standard.string(forKey: "SELECTED_SYMBOLS") {
+            updateSelectedAllSymbols()
+        } else {
+            if #available(macOS 26, *) {
+                selectedSymbols = "SF Symbols 7"
+                selectedAllSymbols = allSymbols7
+            } else {
+                selectedSymbols = "SF Symbols 6"
+                selectedAllSymbols = allSymbols6
+            } // IF AVAILABLE
+        } // IF LET
     } // INIT
     @Published var selectedSymbols: String = UserDefaults.standard.string(forKey: "SELECTED_SYMBOLS") ?? "SF Symbols 6"
     @Published var selectedAllSymbols: [String] = []
