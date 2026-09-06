@@ -1,4 +1,4 @@
-<div align="center"><img width="125" alt="Sssymbols! Icon" src="https://github.com/user-attachments/assets/971411ba-912b-4b4c-8677-588e889dca84"></div>
+<div align="center"><img width="125" alt="Sssymbols Icon" src="https://github.com/user-attachments/assets/971411ba-912b-4b4c-8677-588e889dca84"></div>
 
 <div align="center"><h1>Sssymbols: quickly find SF Symbols for your projects</h1></div>
 This project has the goal to make SF Symbols researches easier and more convenients than using the official SF Symbols macOS app.
@@ -10,34 +10,30 @@ You can keep the app always open into your macOS top menu and access it by that 
 - are you looking for the iOS version? [it's here!](https://github.com/ddvniele/Sssymbols-iOS)
 
 ## Screenshots
-<img width="200" alt="Sssymbols!" src="https://github.com/user-attachments/assets/1dc1678c-3fe9-4c92-b4e0-25f374cf1868">
-<img width="200" alt="Sssymbols! Favorites" src="https://github.com/user-attachments/assets/2cd59176-be5b-485c-87ba-f971daab9e5d">
-<img width="200" alt="Sssymbols! Info" src="https://github.com/user-attachments/assets/ee154126-def7-48a3-81bd-7e763ec4c25f">
+<img width="200" alt="Sssymbols" src="https://github.com/user-attachments/assets/5057924a-8c9f-4939-bc8b-c12db8d89e3e">
+<img width="200" alt="Sssymbols Favorites" src="https://github.com/user-attachments/assets/6de4ba5c-7e05-49c2-ba69-407022f1168a">
+<img width="200" alt="Sssymbols Info" src="https://github.com/user-attachments/assets/4674c886-b59d-497d-9d43-2eb17239a792">
 
 
 ## Download, install & usage
-- you can download the latest version of Sssymbols (macOS) on the [releases page](https://github.com/ddvniele/Sssymbols-macOS/releases/latest)
+- you can download the latest version of Sssymbols for macOS on the [releases page](https://github.com/ddvniele/Sssymbols-macOS/releases/latest)
 - you can download a ZIP of the source files and modify what you'd like to with Xcode
 - you can fork this repo with your updated code or suggest changes [here](https://github.com/ddvniele/Sssymbols-macOS/pulls)
 
 ## Features
 - no need to switch to the SF Symbols app while doing something on Xcode
-- partial support to [SF Symbols 7](https://developer.apple.com/sf-symbols/), full support to SF Symbols 6
+- full support to [SF Symbols 8](https://developer.apple.com/sf-symbols/), SF Symbols 7 and SF Symbols 6
 - copy symbol name on your clipboard with a click or a right-click
 - keep your favorites symbols always with you with the Favorites section
 
-## What's New (v3.1 - Sep 23, 2025)
-- SF Symbols 7 is now the default selection on macOS Tahoe 26
-- went back to the old popup style: can't drag the window anymore, but it's easier to use it this way
-- fixed the Delete all Favorites button
-- added possibility to quit Sssymbols! by just right-clicking on the menu bar icon
+## What's New (Sssymbols 8 - Sep 6, 2026)
+- finally added full support to SF Symbols 8!
+- changed Sssymbols version numbers to reflect the SF Symbols current release
+- removed the ! from Sssymbols name. easier to write and manage the name
 
-## Working on
-- cleaner UI and UX
-- categories for symbols
-- so much more! these features are still a work-in-progress and they're not in the actual latest release yet.
+<details>
+  <summary><b>See older versions changelog...</b></summary>
 
-## Changelog
 - v3.1 - Sep 23, 2025
   - SF Symbols 7 is now the default selection on macOS Tahoe 26
   - went back to the old popup style: can't drag the window anymore, but it's easier to use it this way
@@ -89,3 +85,10 @@ You can keep the app always open into your macOS top menu and access it by that 
     - SF Symbols 5 is still the default symbols list because SF Symbols 6 is still partially broken. you can switch between this two options in the app menu
 - v1.0 - Jan 17, 2024
   - initial release
+
+</details>
+
+## Working on
+- cleaner UI and UX
+- categories for symbols
+- so much more! these features are still a work-in-progress and they're not in the actual latest release yet

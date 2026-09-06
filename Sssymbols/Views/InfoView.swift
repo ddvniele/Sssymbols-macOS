@@ -18,7 +18,7 @@ struct InfoView: View {
                 .frame(width: 90, height: 90)
                 
                 VStack {
-                    Text("Sssymbols!")
+                    Text("Sssymbols")
                     .font(.system(size: 25, weight: .medium, design: .rounded))
                     .frame(maxWidth: .infinity, alignment: .leading)
                     
@@ -38,6 +38,7 @@ struct InfoView: View {
             HStack {
                 Image("ddvniele")
                 .resizable()
+                .clipShape(Circle())
                 .frame(width: 90, height: 90)
                 
                 VStack {

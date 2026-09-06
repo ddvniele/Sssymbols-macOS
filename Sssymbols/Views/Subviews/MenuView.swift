@@ -40,7 +40,7 @@ struct MenuView: View {
                 NavigationStack {
                     HStack {
                         VStack {
-                            Text("Sssymbols!")
+                            Text("Sssymbols")
                             .font(.system(size: 20, weight: .medium, design: .rounded))
                             Text("by @ddvniele")
                             .font(.system(size: 12.5, weight: .light, design: .rounded))
@@ -144,7 +144,7 @@ struct MenuView: View {
                                 Link("Check for updates...", destination: URL(string: "https://github.com/ddvniele/Sssymbols-macOS/releases/latest")!)
                                 .keyboardShortcut("u")
                             }, header: {
-                                Text("Sssymbols! macOS v\(Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "unknown")")
+                                Text("Sssymbols \(Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "") for macOS")
                             }) // SECTION + header
                             
                             Divider()
